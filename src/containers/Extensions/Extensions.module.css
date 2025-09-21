@@ -1,0 +1,24 @@
+@layer components {
+    .extensions {
+        display: grid;
+        gap: .75em;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+            place-content: center;
+            gap: 1em;
+        }
+
+        h1 {
+            font-size: var(--fs-step-5);
+            margin: 0;
+            font-weight: 700;
+        }
+    }
+}

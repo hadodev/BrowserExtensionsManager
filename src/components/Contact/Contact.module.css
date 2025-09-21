@@ -1,0 +1,36 @@
+@layer components {
+  .contact {
+    display: flex;
+    position: fixed;
+    bottom: 1em;
+    left: 1em;
+    justify-content: center;
+    gap: 1em;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5em 1em;
+    max-width: fit-content;
+    font-size: var(--fs-step--3);
+    span {
+      display: none;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+
+      img {
+        transition: transform 0.5s ease;
+        max-width: 24px;
+
+        &:hover {
+          transform: scale(1.4);
+        }
+      }
+    }
+  }
+}

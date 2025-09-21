@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Noto Sans';
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'),
+        url('../fonts/static/NotoSans-Bold.woff2') format('woff2'),
+        url('../fonts/static/NotoSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: local('Noto Sans Medium'), local('NotoSans-Medium'),
+        url('../fonts/static/NotoSans-Medium.woff2') format('woff2'),
+        url('../fonts/static/NotoSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: local('Noto Sans Regular'), local('NotoSans-Regular'),
+        url('../fonts/static/NotoSans-Regular.woff2') format('woff2'),
+        url('../fonts/static/NotoSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

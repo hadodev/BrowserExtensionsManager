@@ -1,0 +1,139 @@
+@layer reset, base, components;
+
+@import "@/assets/css/_font.css" layer(base);
+@import "@/assets/css/reset.css" layer(reset);
+
+:root {
+  color-scheme: light dark;
+
+  /* Colors */
+  /* Neutral */
+  --neutral-900: hsl(227, 75%, 14%);
+  --neutral-800: hsl(226, 25%, 17%);
+  --neutral-700: hsl(225, 23%, 24%);
+  --neutral-600: hsl(226, 11%, 37%);
+  --neutral-300: hsl(0, 0%, 78%);
+  --neutral-200: hsl(217, 61%, 90%);
+  --neutral-100: hsl(0, 0%, 93%);
+  --neutral-0: hsl(200, 60%, 99%);
+  /* Red */
+  --red-400: hsl(3, 86%, 64%);
+  --red-500: hsl(3, 71%, 56%);
+  --red-700: hsl(3, 77%, 44%);
+  /* Gradient */
+  --light-gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+  --dark-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+
+  --background-color: linear-gradient(180deg,
+      light-dark(#ebf2fc, #040918) 0%,
+      light-dark(#eef8f9, #091540) 100%);
+  --text-color: light-dark(var(--neutral-600), var(--neutral-300));
+  --text-color-hover: light-dark(var(--neutral-0), var(--neutral-900));
+  --text-accent-color: light-dark(var(--neutral-900), var(--neutral-0));
+  --accent-color: light-dark(var(--red-700), var(--red-400));
+  --toggle-bg-color: light-dark(var(--neutral-100), var(--red-400));
+
+  --link-color: light-dark(var(--neutral-200), var(--neutral-300));
+  --button-bg-color: light-dark(var(--neutral-100), var(--neutral-800));
+  --button-text-color: light-dark(var(--neutral-900), var(--neutral-0));
+  --card-bg-color: light-dark(var(--neutral-0), var(--neutral-700));
+  --card-border-color: light-dark(var(--neutral-300), var(--neutral-600));
+  --tgl-btn-bg-color: light-dark(var(--neutral-100),
+      hsl(from var(--neutral-600) h s l / 0.5));
+  --tgl-btn-bg-color-hover: light-dark(hsl(from var(--neutral-300) h s l / 0.5),
+      hsl(from var(--neutral-600) h s l / 0.7));
+  --checkbox-tgl-btn-bg-color: light-dark(var(--neutral-300),
+      hsl(from var(--neutral-300) h s l / 0.5));
+
+  color: var(--text-color);
+
+  /* font sizes */
+  /* Step -4: 9.9887px → 8.6806px */
+  --fs-step--4: clamp(0.5425rem, 0.6531rem + -0.1228vw, 0.6243rem);
+  /* Step -3: 11.2373px → 10.4167px */
+  --fs-step--3: clamp(0.651rem, 0.7204rem + -0.0771vw, 0.7023rem);
+  /* Step -2: 12.642px → 12.5px */
+  --fs-step--2: clamp(0.7813rem, 0.7932rem + -0.0133vw, 0.7901rem);
+  /* Step -1: 14.2222px → 15px */
+  --fs-step--1: clamp(0.8889rem, 0.8718rem + 0.073vw, 0.9375rem);
+  /* Step 0: 16px → 18px */
+  --fs-step-0: clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+  /* Step 1: 18px → 21.6px */
+  --fs-step-1: clamp(1.125rem, 1.0458rem + 0.338vw, 1.35rem);
+  /* Step 2: 20.25px → 25.92px */
+  --fs-step-2: clamp(1.2656rem, 1.1408rem + 0.5324vw, 1.62rem);
+  /* Step 3: 22.7813px → 31.104px */
+  --fs-step-3: clamp(1.4238rem, 1.2407rem + 0.7815vw, 1.944rem);
+  /* Step 4: 25.6289px → 37.3248px */
+  --fs-step-4: clamp(1.6018rem, 1.3444rem + 1.0982vw, 2.3328rem);
+  /* Step 5: 28.8325px → 44.7898px */
+  --fs-step-5: clamp(1.802rem, 1.4509rem + 1.4983vw, 2.7994rem);
+
+  font-family: "Noto Sans", system-ui, sans-serif;
+  font-weight: 400;
+  font-size: var(--fs-step-0);
+  font-style: normal;
+  line-height: 1.5;
+  font-optical-sizing: auto;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:has(input[type="checkbox"][name="color-scheme"]:checked) {
+    color-scheme: dark;
+  }
+
+  &:has(input[type="checkbox"][name="color-scheme"]:not(:checked)) {
+    color-scheme: light;
+  }
+}
+
+@layer base {
+  body {
+    anchor-name: --body;
+    display: flex;
+    justify-content: center;
+    transition:
+      background-image 20s cubic-bezier(0.85, 0.57, 0.2, 0.61),
+      color 1s;
+    margin: 0;
+    background: var(--background-color) 100% / cover no-repeat fixed;
+    min-width: 320px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--text-accent-color);
+    font-weight: 600;
+  }
+
+  button {
+    transition: border-color 0.25s;
+    cursor: pointer;
+    border: 1px solid var(--card-border-color);
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 0.2em 1em;
+    color: var(--button-text-color);
+    font-weight: 500;
+    font-size: 0.8rem;
+    font-family: inherit;
+  }
+
+  button:hover {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    color: var(--text-color-hover);
+  }
+
+  button:focus,
+  button:focus-visible {
+    outline: 2px solid var(--accent-color);
+    outline-offset: 2px;
+  }
+}

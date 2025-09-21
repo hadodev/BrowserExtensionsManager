@@ -1,0 +1,17 @@
+.extensionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.emptyState p {
+  font-size: 1.1rem;
+  margin: 0;
+}

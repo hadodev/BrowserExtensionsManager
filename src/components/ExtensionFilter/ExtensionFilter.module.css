@@ -1,0 +1,52 @@
+.filterContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filterItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    & + label {
+      cursor: pointer;
+      margin-inline-start: 0.2em;
+      border: 0.5px solid var(--card-border-color);
+      border-radius: 50px;
+      background-color: var(--card-bg-color);
+      padding: 0.4em 1em;
+      font-weight: 500;
+      font-size: var(--fs-step-0);
+      color: var(--button-text-color);
+
+
+      &:hover {
+        border-color: var(--accent-color);
+        background-color: var(--accent-color);
+        color: var(--text-color-hover);
+      }
+
+      &:focus,
+      &:focus-visible {
+        outline: 2px solid var(--accent-color);
+        outline-offset: 2px;
+      }
+    }
+  }
+
+  input[type="checkbox"]:checked + label {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    color: var(--text-color-hover);
+  }
+  label {
+    cursor: pointer;
+    font-weight: 500;
+  }
+}

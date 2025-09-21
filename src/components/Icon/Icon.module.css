@@ -1,0 +1,10 @@
+@layer components {
+    .icon {
+        & > path {
+            fill: var(--text-accent-color);
+        }
+        & > g > path {
+            fill: var(--accent-color);
+        }
+    }
+}

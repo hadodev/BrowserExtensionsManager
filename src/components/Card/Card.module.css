@@ -1,0 +1,109 @@
+@layer components {
+    .card {
+        border: .5px solid var(--card-border-color);
+        border-radius: 16px;
+        background-color: var(--card-bg-color);
+        display: grid;
+        gap: 2em;
+        padding: 1em;
+
+        
+        h2 {
+            font-size: --fs-step--1;
+            font-weight: 700;
+            margin-bottom: .4em;
+        }
+        
+        & > section {
+            display: flex;
+            gap: .6em;
+            align-items: flex-start;
+            
+            img {
+                display: block;
+                flex: 0 1 clamp(40px, 20%, 70px);
+            }
+
+            article {
+                flex: 1 0;
+            }
+        }
+
+        & > footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                font-size: var(--fs-step-0);
+            }
+        }
+    }
+
+    .dialog {
+        border: .5px solid var(--card-border-color);
+        border-radius: 8px;
+        padding: 1.5em;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: var(--card-bg-color);
+        width: clamp(300px, 50%, 400px);
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        &::backdrop {
+            background: rgba(0, 0, 0, 0.4);
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            align-items: center;
+            
+            p {
+                margin: 0;
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            div {
+                display: flex;
+                gap: 1em;
+
+                button {
+                    
+                    padding: 0.5em 1em;
+                    border: none;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    min-width: 10ch;
+                    
+                    &:hover {
+                        --outline-color: var(--accent-color);
+                        transform: scale(1.05);
+                        outline: 2px solid var(--outline-color);
+                        outline-offset: 2px;
+                    }
+
+                    
+                    &:first-of-type {
+                        background-color: var(--accent-color);
+                        color: var(--text-color-hover);    
+                    }
+                    
+                    &:last-of-type {
+                        background-color: var(--card-border-color);
+                        color: var(--text-color);
+                        
+                        &:hover {
+                            --outline-color: var(--card-border-color);
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

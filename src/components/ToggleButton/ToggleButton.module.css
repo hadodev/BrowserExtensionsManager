@@ -1,0 +1,50 @@
+@layer components {
+  .tglBtn {
+    position: relative;
+    border-radius: 0.5em;
+    background-color: var(--tgl-btn-bg-color);
+    aspect-ratio: 1;
+    width: 40px;
+    &:hover {
+            background-color: var(--tgl-btn-bg-color-hover);
+      }
+
+    & > input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    & > label {
+      position: absolute;
+      transition: background 0.5s;
+      cursor: pointer;
+      margin: auto;
+      inset: 0;
+
+      &:focus,
+      &:focus-visible {
+        outline: 2px solid var(--accent-color);
+        outline-offset: 2px;
+        border-radius: inherit;
+      }
+
+      &:hover {
+        background: var(--accent-color);
+      }
+    }
+
+    & > input:checked + label {
+      background: no-repeat center/50% url("@images/icon-sun.svg");
+      /* :root {
+          color-scheme: dark;
+      } */
+    }
+    & > input:not(:checked) + label {
+      background: no-repeat center/50% url("@images/icon-moon.svg");
+      /* :root {
+          color-scheme: light;
+      } */
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@layer components {
+  .checkbox {
+    position: relative;
+    appearance: none;
+    cursor: pointer;
+
+    &::before {
+      display: inline-block;
+      position: absolute;
+      transform: translateX(-100%);
+      transition: background 0.2s;
+      margin: auto;
+      inset: 0;
+      border: none;
+      border-radius: 16px;
+      background-color: var(--checkbox-tgl-btn-bg-color);
+      width: 32px;
+      height: 18px;
+      content: "";
+    }
+
+    &::after {
+      display: inline-block;
+      position: absolute;
+      transform: translateX(-30px);
+      transition: background 0.2s;
+      margin: auto;
+      inset: 0;
+      border: none;
+      border-radius: 100%;
+      background-color: #fff;
+      width: 14px;
+      height: 14px;
+      content: "";
+    }
+
+    &:checked::before {
+      background-color: var(--accent-color);
+    }
+
+    &:checked::after {
+      transform: translateX(-16px);
+    }
+
+    &:focus,
+    &:focus-visible {
+      &::before {
+        outline: 1px solid var(--accent-color);
+        outline-offset: 2px;
+      }
+    }
+  }
+}

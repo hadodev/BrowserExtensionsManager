@@ -1,0 +1,7 @@
+#root {
+  display: grid;
+  gap: 3em;
+  padding: 2em min(2em, 2em + 2vw);
+  width: clamp(370px, 100%, 1400px);
+  height: fit-content;
+}
