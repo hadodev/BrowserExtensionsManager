@@ -1,4 +1,4 @@
-import styles from '@components/button/Button.module.css'
+import styles from '@components/Button/Button.module.css'
 
 const Button = ({ label = "", onClick }: { label?: string; onClick?: () => void }) => {
     return (

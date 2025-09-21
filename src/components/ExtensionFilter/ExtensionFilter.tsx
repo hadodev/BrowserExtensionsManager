@@ -1,5 +1,5 @@
 import type { FilterType } from '../../types'
-import styles from './ExtensionFilter.module.css'
+import styles from '@components/ExtensionFilter/ExtensionFilter.module.css'
 
 interface ExtensionFilterProps {
   currentFilter: FilterType

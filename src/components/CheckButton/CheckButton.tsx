@@ -1,4 +1,4 @@
-import styles from '@components/checkButton/CheckButton.module.css'
+import styles from '@components/CheckButton/CheckButton.module.css'
 
 type CheckButtonProps = {
     isActive: boolean;

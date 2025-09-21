@@ -1,6 +1,6 @@
 import { CardProps } from '@/types';
 import Button from '@components/Button/Button.tsx';
-import styles from '@components/card/Card.module.css';
+import styles from '@components/Card/Card.module.css';
 import CheckButton from '@components/CheckButton/CheckButton.tsx';
 
 

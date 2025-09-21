@@ -1,4 +1,4 @@
-import styles from '@components/toggleButton/ToggleButton.module.css'
+import styles from '@components/ToggleButton/ToggleButton.module.css'
 
 const ToggleButton = () => {
     return (

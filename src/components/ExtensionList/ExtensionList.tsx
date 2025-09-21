@@ -1,6 +1,6 @@
 import type { Extension } from '../../types'
-import Card from '../Card/Card'
-import styles from './ExtensionList.module.css'
+import Card from '@components/Card/Card'
+import styles from ' @components/ExtensionList/ExtensionList.module.css'
 
 interface ExtensionListProps {
   extensions: Extension[]
