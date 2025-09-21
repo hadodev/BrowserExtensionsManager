@@ -39,20 +39,20 @@ Users should be able to:
 
 #### Browser Extensions Manager UI: desktop light mode
 
-<img src="./fm_solution/desktop-solution-light-min.png" alt="Browser Extensions Manager UI: desktop light mode" style="max-width:400px; height:400px">
+<img src="./fm_solution/desktop-solution-light-min.png" alt="Browser Extensions Manager UI: desktop light mode" style="max-width:400px;">
 
 #### Browser Extensions Manager UI: mobile dark mode
 
-<img src="./fm_solution/mobile-solution-dark-min.png" alt="Browser Extensions Manager UI: mobile dark mode" style="max-width:250px; height:400px">
+<img src="./fm_solution/mobile-solution-dark-min.png" alt="Browser Extensions Manager UI: mobile dark mode" style="max-width:250px; height:600px;">
 
 #### Browser Extensions Manager UI: mobile light mode
 
-<img src="./fm_solution/mobile-solution-light-min.png" alt="Browser Extensions Manager UI: mobile light mode" style="max-width:250px;">
+<img src="./fm_solution/mobile-solution-light-min.png" alt="Browser Extensions Manager UI: mobile light mode" style="max-width:250px; height:600px;">
 
 ### Links
 
-- Solution URL: [GitHub repository](https://your-solution-url.com)
-- Live Site URL: [Vercel](https://your-live-site-url.com)
+- Solution URL: [GitHub repository](https://github.com/hadodev/BrowserExtensionsManager)
+- Live Site URL: [Vercel](https://hadodev-browser-extensions-manager.vercel.app/)
 
 ## My process
 
