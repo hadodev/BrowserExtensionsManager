@@ -1,7 +1,7 @@
 @layer reset, base, components;
 
-@import "@/assets/css/_font.css" layer(base);
-@import "@/assets/css/reset.css" layer(reset);
+@import "./assets/css/_font.css" layer(base);
+@import "./assets/css/reset.css" layer(reset);
 
 :root {
   color-scheme: light dark;

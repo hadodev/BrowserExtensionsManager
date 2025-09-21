@@ -1,7 +1,7 @@
 import { CardProps } from '@/types';
-import Button from '@components/button/Button.tsx';
+import Button from '@components/Button/Button.tsx';
 import styles from '@components/card/Card.module.css';
-import CheckButton from '@components/checkButton/CheckButton.tsx';
+import CheckButton from '@components/CheckButton/CheckButton.tsx';
 
 
 const Card = ({ card, onToggleActive, onRemove }: CardProps) => {

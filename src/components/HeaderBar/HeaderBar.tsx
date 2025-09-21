@@ -1,6 +1,6 @@
 import styles from '@components/headerBar/HeaderBar.module.css'
-import Icon from '@components/icon/Icon'
-import ToggleButton from '@components/toggleButton/ToggleButton'
+import Icon from '@components/Icon/Icon'
+import ToggleButton from '@components/ToggleButton/ToggleButton'
 
 
 const HeaderBar = () => {
