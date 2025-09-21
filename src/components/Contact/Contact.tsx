@@ -12,7 +12,7 @@ function Contact() {
                 <img src={frontedMentorLogo} alt="Frontend Mentor logo" title='Challenge by Frontend Mentor'/>
                 <span>Challenge by Frontend Mentor</span>
             </a>
-            <a href="https://www.linkedin.com/in/hamza-doukkali-26434a335/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/hamza-c-doukkali-26434a335/" target="_blank" rel="noopener noreferrer">
                 <img src={linkedinLogo} alt="LinkedIn logo" title='HaDo Dev LinkedIn'/>
                 <span>Coded by HaDo Dev</span>
             </a>
