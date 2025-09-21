@@ -35,13 +35,13 @@
     }
 
     & > input:checked + label {
-      background: no-repeat center/50% url("@images/icon-sun.svg");
+      background: no-repeat center/50% url("../../assets/images/icon-sun.svg");
       /* :root {
           color-scheme: dark;
       } */
     }
     & > input:not(:checked) + label {
-      background: no-repeat center/50% url("@images/icon-moon.svg");
+      background: no-repeat center/50% url("../../assets/images/icon-moon.svg");
       /* :root {
           color-scheme: light;
       } */
