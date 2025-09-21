@@ -1,4 +1,4 @@
-import styles from '@components/headerBar/HeaderBar.module.css'
+import styles from '@components/HeaderBar/HeaderBar.module.css'
 import Icon from '@components/Icon/Icon'
 import ToggleButton from '@components/ToggleButton/ToggleButton'
 

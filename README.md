@@ -39,11 +39,11 @@ Users should be able to:
 
 #### Browser Extensions Manager UI: desktop light mode
 
-<img src="./fm_solution/desktop-solution-light-min.png" alt="Browser Extensions Manager UI: desktop light mode" style="max-width:400px;">
+<img src="./fm_solution/desktop-solution-light-min.png" alt="Browser Extensions Manager UI: desktop light mode" style="max-width:400px; height:400px">
 
 #### Browser Extensions Manager UI: mobile dark mode
 
-<img src="./fm_solution/mobile-solution-dark-min.png" alt="Browser Extensions Manager UI: mobile dark mode" style="max-width:250px;">
+<img src="./fm_solution/mobile-solution-dark-min.png" alt="Browser Extensions Manager UI: mobile dark mode" style="max-width:250px; height:400px">
 
 #### Browser Extensions Manager UI: mobile light mode
 
@@ -204,9 +204,8 @@ Areas for future enhancement:
 
 ## Author
 
-- **Website**: [HaDo Dev](https://hado.dev)
 - **Frontend Mentor**: [HaDo Dev](https://www.frontendmentor.io/profile/hadodev)
-- **LinkedIn**: [Hamza C. Doukkali](https://www.linkedin.com/in/hamza-doukkali-26434a335/)
+- **LinkedIn**: [Hamza C. Doukkali](https://www.linkedin.com/in/hamza-c-doukkali-26434a335/)
 - **GitHub**: [HaDo Dev](https://github.com/hadodev)
 - **Email**: [Gmail](mailto:hado.dev.app@gmail.com)
 
