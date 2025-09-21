@@ -7,7 +7,7 @@ type CheckButtonProps = {
 
 function CheckButton ({ isActive, onChange }: CheckButtonProps) {
   return (
-    <input type="checkbox" className={styles.checkbox} name="enable" checked={isActive} onChange={onChange} />
+    <input type="checkbox" className={styles.checkbox} name="enable" checked={isActive} onChange={onChange} aria-label="Enable feature" />
   )
 }
 
